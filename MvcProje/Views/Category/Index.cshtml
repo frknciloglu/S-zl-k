@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table class="table table-hover">
+            <tr>
+                @*th başlık kalın punto*@
+
+                <th> Id</th>
+                <th>adı</th>
+                <th>Açıklama</th>
+                <th>Durum</th>
+                <th>güncelle</th>
+            </tr>
+            @*td data normal yazılır*@
+        <tr>
+            <td>1</td>
+            <td>Eğitim</td>
+            <td>Açıklama yaptık</td>
+            <td>true</td>
+            <td><button class="btn btn-success">güncelle</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>spor</td>
+            <td>Açıklama yaptık</td>
+            <td>true</td>
+            <td><button class="btn btn-success">güncelle</button></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>kitap</td>
+            <td>Açıklama yaptık</td>
+            <td>true</td>
+            <td><button class="btn btn-success">güncelle</button></td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>sinema</td>
+            <td>Açıklama yaptık</td>
+            <td>true</td>
+            <td><button class="btn btn-success">güncelle</button></td>
+
+        </tr>
+
+        </table>
+        <button class="btn btn-primary">Yeni Kategori</button>
+        <button class="btn btn-warning"> Kategori listesi</button>
+        <button class="btn btn-danger"> Kategori Açıklamaları</button>
+    </div>
+</body>
+</html>

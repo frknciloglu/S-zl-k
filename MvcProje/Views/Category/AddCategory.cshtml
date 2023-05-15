@@ -1,0 +1,39 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddCategory</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm("AddCategory", "Category", FormMethod.Post))
+    {
+        <div class="form-group">
+            @Html.Label("Kategori adı")
+            @Html.TextAreaFor(x => x.CategoryName)
+            @Html.ValidationMessageFor(x => x.CategoryName)
+            <br /><br />
+            @Html.Label("kategori açıklaması")
+            @Html.TextAreaFor(x => x.CategoryDescription)
+            @Html.ValidationMessageFor(x => x.CategoryDescription)
+
+            <br />
+            <button id="kaydet">Kaydet</button>
+
+        </div>
+    }
+</body>
+</html>
+
+    <script>
+        $('#kaydet').click(function () {
+            swal("Tebrikler!", "Başarılı Bir şekilde eklendi!", "success");
+        });
+    </script>
